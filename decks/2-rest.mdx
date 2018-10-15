@@ -4,7 +4,7 @@ import { Appear } from 'mdx-deck';
 
 import Code from '../components/Code';
 import Mock from '../components/Mock';
-
+import { UL, LI } from '../components/List';
 
 export default Invert
 
@@ -107,11 +107,11 @@ Why not specify **which parameters** we want to receive in the request?
 GET http://my-awesome-movies.com/api/v1/movies/:movieID?ratings=true&cast=true&awards=false
 ```
 
-<ul className="appear-list">
+<UL>
   <Appear>
-    <h2><li>Documentation ⚠️</li></h2>
-    <h2><li>Versioning ⚠️</li></h2>
-    <h2><li>Required fields 🤨</li></h2>
-    <h2><li>Debugging 🤨</li></h2>
+    <LI>Documentation ⚠️</LI>
+    <LI>Versioning ⚠️</LI>
+    <LI>Required fields 🤨</LI>
+    <LI>Debugging 🤨</LI>
   </Appear>
-</ul>
+</UL>

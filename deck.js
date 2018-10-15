@@ -3,7 +3,5 @@ import rest from "./decks/2-rest.mdx";
 import graphql from "./decks/3-graphql.mdx";
 import end from "./decks/4-end.mdx";
 
-import "style-loader!css-loader!./styles.css";
-
 export { default as theme } from "./src/theme";
 export default [...intro, ...rest, ...graphql, , ...end];

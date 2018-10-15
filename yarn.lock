@@ -1439,9 +1439,9 @@ code-point-at@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
 
-code-surfer@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/code-surfer/-/code-surfer-0.5.0.tgz#d3952eeae7482490054cda5f56e1d75f21c0c69c"
+code-surfer@^0.5.3:
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/code-surfer/-/code-surfer-0.5.3.tgz#7e5d4c366e56d060173e82c49d85edd6c273df1d"
   dependencies:
     glamor "^2.20.40"
     prism-react-renderer "^0.1.3"
@@ -3200,11 +3200,11 @@ mdurl@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/mdurl/-/mdurl-1.0.1.tgz#fe85b2ec75a59037f2adfec100fd6c601761152e"
 
-mdx-deck-code-surfer@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/mdx-deck-code-surfer/-/mdx-deck-code-surfer-0.5.0.tgz#bd5d4d17213a423dd53e77448170ccf5238a2deb"
+mdx-deck-code-surfer@^0.5.3:
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/mdx-deck-code-surfer/-/mdx-deck-code-surfer-0.5.3.tgz#79e846eaa5b4b817abdca99ba08a5641ff3ff76e"
   dependencies:
-    code-surfer "^0.5.0"
+    code-surfer "^0.5.3"
     memoize-one "^4.0.2"
 
 mdx-deck@^1.7.7:

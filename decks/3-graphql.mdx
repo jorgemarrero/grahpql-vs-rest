@@ -2,6 +2,8 @@ import { Invert } from 'mdx-deck/layouts'
 import { CodeSurfer } from "mdx-deck-code-surfer";
 import { Appear } from 'mdx-deck';
 
+import { UL, LI } from '../components/List';
+
 ![alt text](./images/searching.svg "Searching")
 
 _We need something nice..._
@@ -49,8 +51,8 @@ no multiple endpoints
   dark
   steps={[
 		{ range: [1,24]},
-        { lines:[5], notes: 'Query arguments'},
         {},
+        { lines:[5], notes: 'Query arguments'},
         { lines: [1, 6, 31]},
         { lines: [1, 7, 32]},
         { lines: [1, 8,9,10,11,12, 33,34,35,36,37]},
@@ -159,20 +161,21 @@ export default Invert
 You use your existing app code
 
 ```notes
-You use you existing application code
+You cen use you existing application code
 ```
 
 ---
 
 # More
 
-<ul className="appear-list">
+<UL>
   <Appear>
-    <h2><li>GraphQL Resolvers ☎️</li></h2>
-    <h2><li>GraphQL Variables 🔠</li></h2>
-    <h2><li>GraphQL Fragments 📃</li></h2>
-    <h2><li>GraphQL Subcriptions ⏰</li></h2>
-    <h2><li>Prisma - GraphQL database abstraction 💎</li></h2>
-    <h2><li>Reference: GitHub GraphQL API 🔝</li></h2>
+    <LI>GraphQL Resolvers ☎️</LI>
+    <LI>GraphQL Variables 🔠</LI>
+    <LI>GraphQL Fragments 📃</LI>
+    <LI>GraphQL Subcriptions ⏰</LI>
+    <LI>Caching/State With GraphQL 🏋️‍♂️</LI>
+    <LI>Prisma - GraphQL database abstraction 💎</LI>
+    <LI>Reference: GitHub GraphQL API 🔝</LI>
   </Appear>
-</ul>
+</UL>

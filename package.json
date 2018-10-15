@@ -13,7 +13,7 @@
     "build": "mdx-deck build deck.js"
   },
   "devDependencies": {
-    "mdx-deck-code-surfer": "^0.5.0",
+    "mdx-deck-code-surfer": "^0.5.3",
     "raw-loader": "^0.5.1"
   }
 }

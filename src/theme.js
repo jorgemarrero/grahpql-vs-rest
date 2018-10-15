@@ -7,5 +7,11 @@ export default {
     text: "#d6deeb",
     background: "#011627",
     link: "#addb67"
+  },
+  css: {
+    ...baseTheme.css,
+    strong: {
+      fontWeight: 800
+    }
   }
 };
