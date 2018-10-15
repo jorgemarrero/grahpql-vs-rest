@@ -1,0 +1,56 @@
+
+
+// GraphQL Query
+
+movie(movieID: 801934) {
+    title,
+    synopsis,
+    ratings {
+        film_affinity,
+        imdb,
+        metacritic
+    }
+    cast {
+        main_character {
+            name,
+            character,
+            thumbnail
+        }
+        secondary_characters {
+            name,
+            character
+        }
+    }
+}
+
+
+
+// GraphQL Response
+
+"movie": {
+    "title": "Lord of War",
+    "synopsis": "Based on fact, LORD OF WAR is...",
+    "ratings" {
+        "film_affinity": 7.2,
+        "imdb": 7.6,
+        "metacritic": 62
+    },
+    "cast" {
+        "main_character": {
+            "name": "Nicolas Cage",
+            "character": "Yuri Orlov",
+            "thumbnail": "http://my-awesome-movies.com/uewhuew.jpg"
+        },
+        "secondary_characters": [
+            {
+                "name": "Jared Leto",
+                "character": "Vitaly Orlov",
+            },
+            {
+                "name": "Ethan Hawke",
+                "character": "Jack Valentine", 
+            },
+        ...
+        ],
+    }
+}

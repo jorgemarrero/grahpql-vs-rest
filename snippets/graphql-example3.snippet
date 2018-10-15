@@ -1,0 +1,48 @@
+
+
+// GraphQL Mutation
+
+mutation {
+  createMovie(
+      input: {
+        movieID: 230230,
+        title: "The Godfather",
+        ratings: {  film_affinity: 9.0 }
+      }
+  ) 
+}
+
+// GraphQL Schema
+
+type Query {
+    movie(movieID: Int): Movie
+}
+
+type Mutation {
+    createMovie(input: MovieInput): Movie,
+    updateMovie(movieID: ID!, input: MessageInput): Movie
+}
+
+type MovieInput {
+    title: String!,
+    synopsis: String,
+    ratings: Ratings,
+    cast: Cast
+}
+
+type Movie {
+    movieID: ID!,
+    title: String!,
+    synopsis: String,
+    ratings: Ratings,
+    cast: Cast
+}
+
+type Ratings {
+    ...
+}
+
+type Cast {
+    ...
+}
+

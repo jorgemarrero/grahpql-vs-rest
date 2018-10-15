@@ -1,0 +1,51 @@
+
+
+
+// GET http://my-awesome-movies.com/api/v1/movies/:movieID
+
+{
+  "id": 801934,
+  "title": "Lord of War",
+  "duration": 122,
+  "director": "Andrew Niccol",
+  "producer": "Lions Gate Films",
+  "synopsis": "Based on fact, LORD OF WAR is..."
+  "ratings_url": "http://my-awesome-movies.com/api/v1/movies/801934/ratings",
+  "cast_url": "http://my-awesome-movies.com/api/v1/movies/801934/cast",
+  "awards_url": "http://my-awesome-movies.com/api/v1/movies/801934/awards",
+}
+
+
+// GET http://my-awesome-movies.com/api/v1/movies/:movieID/ratings
+
+{
+  "film_affinity": 7.2,
+  "imdb": 7.6,
+  "rotten_tomatoes": 61,
+  "metacritic": 62
+}
+
+
+// GET http://my-awesome-movies.com/api/v1/movies/:movieID/cast
+
+{
+  "main_character": {
+    "name": "Nicolas Cage",
+    "character": "Yuri Orlov",
+    "thumbnail": "http://my-awesome-movies.com/uewhuew.jpg"
+  },
+  "secondary_characters": [
+    {
+      "name": "Jared Leto",
+      "character": "Vitaly Orlov",
+      "thumbnail": "http://my-awesome-movies.com/weewdew.jpg"
+    },
+    {
+      "name": "Ethan Hawke",
+      "character": "Jack Valentine", 
+      "thumbnail": "http://my-awesome-movies.com/asasdee.jpg"
+    },
+    ...
+  ],
+  "extras": [{...}, {...}, {...}, ...]
+}

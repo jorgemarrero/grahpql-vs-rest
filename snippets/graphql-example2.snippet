@@ -1,0 +1,35 @@
+
+
+// GraphQL Query
+
+{
+    movie(movieID: 801934) {
+        title,
+        synopsis,
+    }
+}
+
+
+
+// GraphQL Schema
+
+type Query {
+    movie(movieID: ID): Movie
+}
+
+type Movie {
+    movieID: ID!,
+    title: String!,
+    synopsis: String,
+    ratings: Ratings,
+    cast: Cast
+}
+
+type Ratings {
+    ...
+}
+
+type Cast {
+    ...
+}
+

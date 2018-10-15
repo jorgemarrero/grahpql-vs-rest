@@ -1,7 +1,178 @@
-# GraphQL
+import { Invert } from 'mdx-deck/layouts'
+import { CodeSurfer } from "mdx-deck-code-surfer";
+import { Appear } from 'mdx-deck';
 
+![alt text](./images/searching.svg "Searching")
+
+_We need something nice..._
+
+---
+
+export default Invert
+
+![alt text](./images/graphql-logo.png "GraphQL Logo")
+
+A **query** language for your API
+
+```notes
 - Same request with GraphQL
 - Advantages
 - is typed: SCHEMA
 - is introspectabe
 - single endpoint
+- versioning in GraphQL
+GraphQL is a specification
+
+
+```
+
+---
+
+## #Same example
+
+---
+
+export default Invert
+
+![alt text](./images/mobile-graphql.svg "Mobile GraphQL")
+
+```notes
+no multiple endpoints
+```
+
+---
+
+<CodeSurfer
+  code={require("!raw-loader!../snippets/graphql-example1.snippet")}
+  lang="js"
+  showNumbers={false}
+  dark
+  steps={[
+		{ range: [1,24]},
+        { lines:[5], notes: 'Query arguments'},
+        {},
+        { lines: [1, 6, 31]},
+        { lines: [1, 7, 32]},
+        { lines: [1, 8,9,10,11,12, 33,34,35,36,37]},
+        { lines: [4,13,14,15,16,17,18,19,20,21,22,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,58]},
+	]}
+/>
+
+---
+
+export default Invert
+
+GraphQL has **single endpoint** that returns **flexible data structures**
+
+---
+
+# Features
+
+---
+export default Invert
+
+# _GraphQL is_ typed
+
+
+---
+
+<CodeSurfer
+  code={require("!raw-loader!../snippets/graphql-example2.snippet")}
+  lang="js"
+  showNumbers={false}
+  dark
+  steps={[
+		{ 
+      range: [2, 10]
+    },
+    {
+      range: [14, 35]
+    },
+    {
+      lines: [6, 17]
+    },
+    {
+      lines: [7, 8, 22, 23, 24, 25]
+    }, {
+      lines: [24, 25, 27, 28, 29, 30, 31, 32, 33, 34, 35], notes: "It's herarchical"
+    }
+	]}
+/>
+
+```notes
+  The type system is a product of your app code.
+  Behind the scenes of the previous example is actually a schema, the schema that grpahql is quering.
+  It's like a database schema but istead of describe the strcutre of your database, we describe the strcuture that we can query.
+
+  At the top level, we have the movie with a parameter movieID as a Integer. With this GraphQL type system we can determinate if a query is valid or not.
+  
+  You notice the ban in the title, this means that you will always return a value from that (never null)
+  
+  It's herarchical
+```
+
+---
+export default Invert
+
+# _GraphQL is_ introspectabe 🔎
+
+[GraphiQL](https://etmdb.com/graphql?query=%7B%0A%20%20hello%0A%7D%0A)
+
+---
+export default Invert
+
+# Documentation for free 📖
+
+[GraphiQL](https://etmdb.com/graphql?query=%7B%0A%20%20hello%0A%7D%0A)
+
+---
+export default Invert
+
+# Mutations! 👽
+
+GraphQL is not just to get data.
+
+---
+
+<CodeSurfer
+  code={require("!raw-loader!../snippets/graphql-example3.snippet")}
+  lang="js"
+  showNumbers={false}
+  dark
+  steps={[
+    { range: [5, 14]},
+    { lines: [6, 22]},
+    { lines: [5,6,7,8,9,10,11,12, 22, 26,27,28,29,30,31]},
+  ]}
+/>
+
+
+```notes
+Multiple fields in mutations
+```
+
+---
+export default Invert
+
+## Facade in front of databases, caches, services...
+
+You use your existing app code
+
+```notes
+You use you existing application code
+```
+
+---
+
+# More
+
+<ul className="appear-list">
+  <Appear>
+    <h2><li>GraphQL Resolvers ☎️</li></h2>
+    <h2><li>GraphQL Variables 🔠</li></h2>
+    <h2><li>GraphQL Fragments 📃</li></h2>
+    <h2><li>GraphQL Subcriptions ⏰</li></h2>
+    <h2><li>Prisma - GraphQL database abstraction 💎</li></h2>
+    <h2><li>Reference: GitHub GraphQL API 🔝</li></h2>
+  </Appear>
+</ul>
