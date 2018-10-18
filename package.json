@@ -10,7 +10,10 @@
   },
   "scripts": {
     "start": "mdx-deck deck.js",
-    "build": "mdx-deck build deck.js"
+    "build": "yarn clean && yarn images && yarn html",
+    "clean": "rm -rf dist",
+    "images": "mkdir -p dist/images && cp -R images dist/",
+    "html": "mdx-deck build deck.js"
   },
   "devDependencies": {
     "mdx-deck-code-surfer": "^0.5.3",
